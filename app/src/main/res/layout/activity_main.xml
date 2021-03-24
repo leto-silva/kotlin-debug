@@ -13,8 +13,9 @@
         android:layout_marginTop="20dp"
         android:text="VERBOSE LOG"
         app:backgroundTint="#9A9695"
-        app:layout_constraintTop_toBottomOf="@+id/warningBTN"
-        tools:layout_editor_absoluteX="127dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warningBTN" />
 
     <Button
         android:id="@+id/warningBTN"
@@ -30,7 +31,7 @@
         android:id="@+id/infoBTN"
         android:layout_width="158dp"
         android:layout_height="49dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="INFO LOG"
         app:backgroundTint="#44C83F"
         app:layout_constraintStart_toStartOf="@+id/warningBTN"
