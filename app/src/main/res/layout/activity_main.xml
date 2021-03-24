@@ -7,22 +7,50 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/debugBTN2"
+        android:id="@+id/verboseBTN"
         android:layout_width="158dp"
         android:layout_height="49dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
+        android:text="VERBOSE LOG"
+        app:backgroundTint="#9A9695"
+        app:layout_constraintTop_toBottomOf="@+id/warningBTN"
+        tools:layout_editor_absoluteX="127dp" />
+
+    <Button
+        android:id="@+id/warningBTN"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:text="WARNING LOG"
+        app:backgroundTint="#F1E470"
+        app:layout_constraintStart_toStartOf="@+id/verboseBTN"
+        app:layout_constraintTop_toBottomOf="@+id/infoBTN" />
+
+    <Button
+        android:id="@+id/infoBTN"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:text="INFO LOG"
+        app:backgroundTint="#44C83F"
+        app:layout_constraintStart_toStartOf="@+id/warningBTN"
+        app:layout_constraintTop_toBottomOf="@+id/errorBTN" />
+
+    <Button
+        android:id="@+id/errorBTN"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
         android:text="ERROR LOG"
         app:backgroundTint="#F44336"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/infoBTN"
         app:layout_constraintTop_toBottomOf="@+id/debugBTN" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textMSG"
         android:layout_width="223dp"
         android:layout_height="27dp"
         android:layout_marginTop="124dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,11 +58,10 @@
 
     <Button
         android:id="@+id/debugBTN"
-        android:layout_width="164dp"
-        android:layout_height="55dp"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
         android:layout_marginTop="64dp"
         android:text="DEBUG LOG"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/errorBTN"
+        app:layout_constraintTop_toBottomOf="@+id/textMSG" />
 </androidx.constraintlayout.widget.ConstraintLayout>
